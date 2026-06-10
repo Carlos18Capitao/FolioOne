@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://carloscapitao.cc-computacao.com/sitemap.xml

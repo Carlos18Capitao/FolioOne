@@ -217,3 +217,17 @@ document.addEventListener('DOMContentLoaded', function() {
   var saved = localStorage.getItem('lang') || 'en';
   document.documentElement.dataset.lang = saved;
 });
+
+/**
+ * Cookie consent banner
+ */
+(function() {
+  if (localStorage.getItem('cookieConsent') === 'accepted') return;
+  var banner = document.getElementById('cookie-banner');
+  if (!banner) return;
+  banner.classList.remove('hidden');
+  document.getElementById('cookie-accept').addEventListener('click', function() {
+    localStorage.setItem('cookieConsent', 'accepted');
+    banner.classList.add('hidden');
+  });
+})();
