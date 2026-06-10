@@ -970,12 +970,15 @@ section,
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 12px 18px;
-  border-radius: 6px;
+  padding: 12px 30px;
+  border-radius: 50px;
   color: var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
-  transition: 0.3s ease-in-out;
+  background: transparent;
+  border: 2px solid var(--accent-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .about .intro-content .cta-group .btn-ghost:hover,
@@ -983,8 +986,8 @@ section,
   color: var(--contrast-color);
   background: var(--accent-color);
   border-color: var(--accent-color);
+  transform: translateY(-2px);
   outline: none;
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .about .intro-content .cta-group .link-underline {
@@ -2829,22 +2832,68 @@ section,
 }
 
 .contact .contact-form .btn {
-  background-color: color-mix(in srgb, var(--surface-color), transparent 80%);
+  background: var(--accent-color);
   color: var(--contrast-color);
-  padding: 1rem 2rem;
-  border-radius: 2rem;
+  border: 2px solid var(--accent-color);
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  transition: 0.3s;
-}
-
-.contact .contact-form .btn i {
-  font-size: 1.25rem;
+  gap: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .contact .contact-form .btn:hover {
-  background-color: color-mix(in srgb, var(--surface-color), transparent 70%);
+  background: color-mix(in srgb, var(--accent-color), black 15%);
+  border-color: color-mix(in srgb, var(--accent-color), black 15%);
+  transform: translateY(-2px);
+}
+
+/*--------------------------------------------------------------
+# Global Button System (fora do hero)
+--------------------------------------------------------------*/
+.btn.btn-primary {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border: 2px solid var(--accent-color);
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn.btn-primary:hover {
+  background: color-mix(in srgb, var(--accent-color), black 15%);
+  border-color: color-mix(in srgb, var(--accent-color), black 15%);
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+}
+
+.btn.btn-outline {
+  background: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.btn.btn-outline:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transform: translateY(-2px);
 }
 
 /*--------------------------------------------------------------
@@ -2953,18 +3002,19 @@ section,
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 10px 22px;
+  padding: 12px 30px;
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
-  border-radius: 4px;
+  border-radius: 50px;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
-  transition: background 0.2s, color 0.2s;
+  transition: all 0.3s ease;
 }
 .btn-download:hover {
   background: var(--accent-color);
-  color: #fff;
+  color: var(--contrast-color);
+  transform: translateY(-2px);
 }
 
 /*--------------------------------------------------------------

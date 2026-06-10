@@ -211,11 +211,19 @@ function toggleLang() {
   var next = html.dataset.lang === 'en' ? 'pt' : 'en';
   html.dataset.lang = next;
   localStorage.setItem('lang', next);
+  updatePlaceholders(next);
+}
+
+function updatePlaceholders(lang) {
+  document.querySelectorAll('[data-en-placeholder]').forEach(function(el) {
+    el.placeholder = el.getAttribute('data-' + lang + '-placeholder') || '';
+  });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
   var saved = localStorage.getItem('lang') || 'en';
   document.documentElement.dataset.lang = saved;
+  updatePlaceholders(saved);
 });
 
 /**
