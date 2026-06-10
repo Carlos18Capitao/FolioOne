@@ -81,8 +81,8 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row g-4 g-lg-5 justify-content-center">
-          <div class="col-lg-8">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
             <div class="info-box" data-aos="fade-up" data-aos-delay="200">
               <h3><span data-en>Contact Info</span><span data-pt>Informações de Contacto</span></h3>
               <p><span data-en>Available for freelance automation projects and consultancy services.</span><span data-pt>Disponível para projetos de automação freelance e serviços de consultoria.</span></p>
@@ -105,6 +105,7 @@
                 <div class="content">
                   <h4><span data-en>Phone</span><span data-pt>Telefone</span></h4>
                   <p>+244 934 527 303</p>
+                  <p>+244 952 932 196</p>
                 </div>
               </div>
 
@@ -128,6 +129,42 @@
                 </div>
               </div>
 
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+            <div class="info-box">
+              <h3 class="contact-form-title">
+                <span data-en>Send a Message</span>
+                <span data-pt>Enviar Mensagem</span>
+              </h3>
+              <p>
+                <span data-en>Fill in the form and I'll get back to you as soon as possible.</span>
+                <span data-pt>Preencha o formulário e responderei o mais brevemente possível.</span>
+              </p>
+              <!-- Replace FORM_ID with your Formspree form ID after registering at formspree.io -->
+              <form action="https://formspree.io/f/xvznbgvp" method="POST" class="contact-form">
+                <div class="mb-3">
+                  <label for="contact-name">
+                    <span data-en>Name</span><span data-pt>Nome</span>
+                  </label>
+                  <input type="text" id="contact-name" name="name" class="form-control" placeholder="" required>
+                </div>
+                <div class="mb-3">
+                  <label for="contact-email">Email</label>
+                  <input type="email" id="contact-email" name="email" class="form-control" placeholder="" required>
+                </div>
+                <div class="mb-3">
+                  <label for="contact-message">
+                    <span data-en>Message</span><span data-pt>Mensagem</span>
+                  </label>
+                  <textarea id="contact-message" name="message" class="form-control" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">
+                  <span data-en>Send Message</span><span data-pt>Enviar Mensagem</span>
+                </button>
+              </form>
             </div>
           </div>
 

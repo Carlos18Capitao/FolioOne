@@ -26,6 +26,7 @@
   <!-- Favicons -->
   <link href="assets/img/profile/carlos-capitao.webp" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preload" as="image" href="assets/img/profile/carlos-capitao.webp">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -91,8 +92,8 @@
                 <span data-pt>Olá, sou o Carlos — Técnico de Automação Industrial que constrói sistemas fiáveis com experiência prática e visão integrada de TI.</span>
               </h2>
               <p class="lead">
-                <span data-en>I have been working in industrial automation for around two years, during which I took on technical supervision responsibilities at EDACO. I have hands-on experience programming PLCs from the leading market brands — Siemens, Schneider and Allen Bradley — as well as industrial networks and SCADA systems.</span>
-                <span data-pt>Trabalho em automação industrial há cerca de dois anos, durante os quais assumi responsabilidades de supervisão técnica na EDACO. Tenho experiência prática na programação de PLCs das principais marcas do mercado — Siemens, Schneider e Allen Bradley — bem como em redes industriais e sistemas SCADA.</span>
+                <span data-en>I worked in industrial automation at EDACO from 2023 to 2025, where I held technical supervision responsibilities. I have hands-on experience programming PLCs from the leading market brands — Siemens, Schneider and Allen Bradley — as well as industrial networks and SCADA systems.</span>
+                <span data-pt>Trabalhei em automação industrial na EDACO de 2023 a 2025, onde assumi responsabilidades de supervisão técnica. Tenho experiência prática na programação de PLCs das principais marcas do mercado — Siemens, Schneider e Allen Bradley — bem como em redes industriais e sistemas SCADA.</span>
               </p>
               <p>
                 <span data-en>My background in Computer Science allows me to approach industrial systems in an integrated way, which has proven useful in the projects I have been involved in. I continue to provide consultancy to EDACO on request.</span>
@@ -156,7 +157,7 @@
         <!-- Journey Timeline -->
         <div class="mb-5">
           <div class="row g-4">
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+            <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
               <article class="timeline-item">
                 <span class="dot"></span>
                 <time>2014</time>
@@ -164,7 +165,7 @@
                 <p><span data-en>Started Bachelor's at Universidade Agostinho Neto, Luanda.</span><span data-pt>Início da Licenciatura na Universidade Agostinho Neto, Luanda.</span></p>
               </article>
             </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+            <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="150">
               <article class="timeline-item">
                 <span class="dot"></span>
                 <time>2023</time>
@@ -172,7 +173,7 @@
                 <p><span data-en>Industrial Electricity &amp; Electrical Control Systems at EDACO.</span><span data-pt>Eletricidade Industrial e Sistemas de Controlo Elétrico na EDACO.</span></p>
               </article>
             </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+            <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
               <article class="timeline-item">
                 <span class="dot"></span>
                 <time>2023</time>
@@ -180,12 +181,28 @@
                 <p><span data-en>Technical Automation Supervisor at EDACO, Luanda.</span><span data-pt>Supervisor Técnico de Automação na EDACO, Luanda.</span></p>
               </article>
             </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="250">
+              <article class="timeline-item">
+                <span class="dot"></span>
+                <time>2025</time>
+                <h4><span data-en>IT Implementation Course</span><span data-pt>Curso de TI — IPVx</span></h4>
+                <p><span data-en>Unified IT Implementation Course at IPVx, Luanda.</span><span data-pt>Curso de Implementação Unificada de TI no IPVx, Luanda.</span></p>
+              </article>
+            </div>
+            <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
               <article class="timeline-item">
                 <span class="dot"></span>
                 <time>2025</time>
                 <h4><span data-en>Independent Consultant</span><span data-pt>Consultor Independente</span></h4>
                 <p><span data-en>Providing automation consultancy services on request.</span><span data-pt>Prestação de serviços de consultoria em automação sob pedido.</span></p>
+              </article>
+            </div>
+            <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="350">
+              <article class="timeline-item">
+                <span class="dot"></span>
+                <time>2026</time>
+                <h4><span data-en>Degree Completion (expected)</span><span data-pt>Conclusão da Licenciatura (previsto)</span></h4>
+                <p><span data-en>Bachelor's in Computer Science — Universidade Agostinho Neto.</span><span data-pt>Licenciatura em Ciências da Computação — Universidade Agostinho Neto.</span></p>
               </article>
             </div>
           </div>
@@ -245,52 +262,64 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row g-4 skills-animation">
+        <div class="skills-grid">
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="skill-box">
-              <h3>Siemens S7 PLCs</h3>
-              <p><span data-en>S7-300/400/1200/1500 series. TIA Portal programming.</span><span data-pt>Série S7-300/400/1200/1500. Programação em TIA Portal.</span></p>
-              <span class="text-end d-block">90%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+          <!-- PLCs & Controlo -->
+          <div class="skill-group">
+            <h4><span data-en>PLCs &amp; Control</span><span data-pt>PLCs &amp; Controlo</span></h4>
+            <div class="skill-tags">
+              <span class="tag tag-expert">Siemens S7-1500</span>
+              <span class="tag tag-expert">Siemens S7-1200</span>
+              <span class="tag tag-expert">TIA Portal</span>
+              <span class="tag tag-expert">Siemens S7-300/400</span>
+              <span class="tag tag-advanced">Allen Bradley RSLogix</span>
+              <span class="tag tag-advanced">Schneider Modicon</span>
+              <span class="tag tag-expert">Ladder / FBD / ST / SFC</span>
+              <span class="tag tag-advanced"><span data-en>Motion Control VFDs</span><span data-pt>Motion Control VFDs</span></span>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <div class="skill-box">
-              <h3>SCADA &amp; DCS</h3>
-              <p><span data-en>System implementation and maintenance. WinCC, FactoryTalk.</span><span data-pt>Implementação e manutenção de sistemas. WinCC, FactoryTalk.</span></p>
-              <span class="text-end d-block">85%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+          <!-- SCADA & HMI -->
+          <div class="skill-group">
+            <h4>SCADA &amp; HMI</h4>
+            <div class="skill-tags">
+              <span class="tag tag-expert">WinCC</span>
+              <span class="tag tag-advanced">FactoryTalk</span>
+              <span class="tag tag-expert">SCADA / DCS</span>
+              <span class="tag tag-advanced">HMI Design</span>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-box">
-              <h3><span data-en>Industrial Networks</span><span data-pt>Redes Industriais</span></h3>
-              <p>ProfiNet, ProfiBus, ModBus RTU/TCP, EtherNet/IP.</p>
-              <span class="text-end d-block">85%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+          <!-- Redes Industriais -->
+          <div class="skill-group">
+            <h4><span data-en>Industrial Networks</span><span data-pt>Redes Industriais</span></h4>
+            <div class="skill-tags">
+              <span class="tag tag-expert">ProfiNet</span>
+              <span class="tag tag-expert">ModBus RTU/TCP</span>
+              <span class="tag tag-advanced">EtherNet/IP</span>
+              <span class="tag tag-advanced">ProfiBus</span>
+              <span class="tag tag-advanced">I/O Link</span>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="skill-box">
-              <h3>Allen Bradley / Schneider</h3>
-              <p><span data-en>RSLogix 5000/Studio 5000. Modicon programming.</span><span data-pt>RSLogix 5000/Studio 5000. Programação Modicon.</span></p>
-              <span class="text-end d-block">80%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+          <!-- Segurança Industrial -->
+          <div class="skill-group">
+            <h4><span data-en>Industrial Safety</span><span data-pt>Segurança Industrial</span></h4>
+            <div class="skill-tags">
+              <span class="tag tag-intermediate">HAZOP</span>
+              <span class="tag tag-intermediate">SIS / ICSS</span>
+              <span class="tag tag-intermediate">F&amp;G Systems</span>
+              <span class="tag tag-advanced"><span data-en>Industrial Instrumentation</span><span data-pt>Instrumentação Industrial</span></span>
             </div>
           </div>
 
+        </div>
+
+        <!-- Legend -->
+        <div class="skills-legend" data-aos="fade-up" data-aos-delay="200">
+          <span class="tag tag-expert"><span data-en>Expert</span><span data-pt>Especialista</span></span>
+          <span class="tag tag-advanced"><span data-en>Advanced</span><span data-pt>Avançado</span></span>
+          <span class="tag tag-intermediate"><span data-en>Intermediate</span><span data-pt>Intermédio</span></span>
         </div>
 
       </div>
